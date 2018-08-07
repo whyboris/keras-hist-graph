@@ -16,7 +16,7 @@ setuptools.setup(
     license='MIT',
     long_description=long_description,
     long_description_content_type="text/markdown",
-    name="keras_hist_graph",
+    name="keras-hist-graph",
     packages=setuptools.find_packages(),
     url="https://github.com/whyboris/keras-hist-graph",
     version="0.0.1"

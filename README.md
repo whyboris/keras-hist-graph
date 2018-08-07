@@ -16,7 +16,7 @@ It will also print the maximum _validation accuracy_ reached during the training
 assuming you are using _Keras_
 
 ```
-from keras-hist-graph import plot_history
+from keras_hist_graph import plot_history
 
 history = model.fit(x, y, ...)
 
