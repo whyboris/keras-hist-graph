@@ -1,3 +1,1 @@
-name = "keras_hist_graph"
-
-from .plot_history import plot_history
+from keras_hist_graph.keras_hist_graph import plot_history
