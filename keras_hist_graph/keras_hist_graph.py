@@ -33,11 +33,11 @@ def set_plot_history_data(ax, history, which_graph):
     trim = 5 # remove first 5 epochs
     # when graphing loss the first few epochs may skew the (loss) graph
     
-    ax.plot(epochs[trim:], train[trim:], 'dodgerblue', label=('Training'))
     ax.plot(epochs[trim:], train[trim:], 'dodgerblue', linewidth=15, alpha=0.1)
+    ax.plot(epochs[trim:], train[trim:], 'dodgerblue', label=('Training'))
     
-    ax.plot(epochs[trim:], valid[trim:], 'g', label=('Validation'))
     ax.plot(epochs[trim:], valid[trim:], 'g', linewidth=15, alpha=0.1)
+    ax.plot(epochs[trim:], valid[trim:], 'g', label=('Validation'))
 
     
 def get_max_validation_accuracy(history):
@@ -84,4 +84,5 @@ def plot_history(history):
     ax2.spines['top'].set_visible(False)
     ax2.spines['right'].set_visible(False)
 
-    plt.tight_layout()
+    # tight_layout seems to be broken
+    # plt.tight_layout()
