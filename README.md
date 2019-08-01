@@ -22,3 +22,9 @@ history = model.fit(x, y, ...)
 
 plot_history(history)
 ```
+
+### Comments
+
+[Why use the XKCD style?](https://www.chrisstucchio.com/blog/2014/why_xkcd_style_graphs_are_important.html)
+
+It’s a great way to communicate the imprecision of the underlying data!
