@@ -1,2 +1,3 @@
 build/
 keras_hist_graph.egg-info
+dist/
