@@ -23,7 +23,25 @@ history = model.fit(x, y, ...)
 plot_history(history)
 ```
 
-### Comments
+# Arguments
+
+_plot_history_ now accepts any of these arguments (in any order)
+
+| argument | default | possible | details |
+| -------- | ------- | -------- | ------- |
+| fig_size | (10, 6) | (`float`, `float`) | Indicates _width_ and _height_ of the resulting graph |
+| min_accuracy | 0.5 | `[0, 1)` | Minimum accuracy to graph (often we don't care if acuracy is below 50%) |
+| smooth_factor | 0.75 | `[0, 1]` | Zero to one, inclusive. Smooths out the curves by averaging previous points. Consider makeing smaller if number of epochs is small. |
+| start_epoch | 5 | integer >= 0 | Plot the history starting at this epoch. Useful since the first epochs can have very high loss that makes the later loss hard to analyze visually |
+| xkcd | True | `True` `False` | Whether to render in the _XKCD_ style. You might need to render twice for all properties to update if you change the boolean after using the method before |
+
+Example:
+
+```py
+plot_history(history, fig_size = (11, 8.5), min_accuracy = 0.8, start_epoch = 2, smooth_factor = 0.1)
+```
+
+### Notes
 
 [Why use the XKCD style?](https://www.chrisstucchio.com/blog/2014/why_xkcd_style_graphs_are_important.html)
 

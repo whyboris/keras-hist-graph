@@ -19,5 +19,5 @@ setuptools.setup(
     name="keras-hist-graph",
     packages=setuptools.find_packages(),
     url="https://github.com/whyboris/keras-hist-graph",
-    version="0.0.2"
+    version="0.0.3"
 )
